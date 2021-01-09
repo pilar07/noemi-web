@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   web:
+    build: .
     image:  nginx:alpine
     volumes:
       - ./:/usr/share/nginx/html
