@@ -1,7 +1,0 @@
-version: '2'
-
-services:
-  web:
-    image:  teocafe/web-teocafe:22f325141d82bc1033f85dd3e294e9d9014ce09a
-    expose:
-      - "8080"
