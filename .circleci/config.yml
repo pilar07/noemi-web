@@ -5,7 +5,7 @@ jobs:
     steps:
      - add_ssh_keys:
           fingerprints:
-           - "2f:d2:86:da:1e:b8:06:02:59:bb:6d:97:70:e8:bb:d3"
+           - "2c:21:24:0c:a6:62:57:5e:e9:05:02:a2:2a:3f:7d:2d"
      - checkout
      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
      - run: docker build -t pilar07/holadocker:$CIRCLE_SHA1 .
