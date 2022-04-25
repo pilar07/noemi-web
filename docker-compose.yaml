@@ -27,15 +27,15 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   www:
-    web-teocafe:
+    holadocker:
     build: .
     restart: always
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=clifflatorre.com,www.clifflatorre.com
-      - LETSENCRYPT_HOST=clifflatorre.com,www.clifflatorre.com
-      - LETSENCRYPT_EMAIL=teocafe@gmail.com
+      - VIRTUAL_HOST=noemiromero.info,www.noemiromero.info
+      - LETSENCRYPT_HOST=noemiromero.info,www.noemiromero.info
+      - LETSENCRYPT_EMAIL=pilar.romerom07@gmail.com
     depends_on:
       - nginx-proxy
       - letsencrypt
